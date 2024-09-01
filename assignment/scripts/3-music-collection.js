@@ -34,7 +34,20 @@ function showCollection(collection) {
   console.log(`${item.title} by ${item.artist}, published in ${item.yearPublished}`)
  } 
 }
-console.log(showCollection(myCollection));
+//console.log(showCollection(myCollection));
+
+function findByArtist(collection, artist) {
+    let matchedRes = [];
+  for(const item of collection) {
+    if(item.artist === artist){
+      matchedRes.push(item);
+    }
+  }
+  return matchedRes;
+}
+
+console.log(findByArtist(myCollection, 'Smino'));
+console.log(findByArtist(myCollection, "The Grateful Dead"));
 
 // PLEASE DO NOT MODIFY THIS. Just leave it down here at the bottom. Think of it
 // as a lil' chunk of friendly code that you don't need to understand right now.
