@@ -19,11 +19,15 @@ function addToCollection(collection, title, artist, yearPublished) {
 
   return newAlbum;
 }
-const myCollect = addToCollection(myCollection, "title test", 'artist test', 'publishedTest')
-const myCollect2 = addToCollection(myCollection, "title test 2", 'artist test2', 'publishedTest3')
-console.log(myCollect);
-console.log(myCollection);
 
+const myCollect = addToCollection(myCollection, 'Bismillah', 'Peter Cat Recording Co.', '2019');
+const myCollect2 = addToCollection(myCollection, "Europe '72 (Live: 2001 Remaster)", "Grateful Dead", "2001");
+const myCollect3 = addToCollection(myCollection, 'This Old Dog', 'Mac DeMarco', '2017');
+const myCollect4 = addToCollection(myCollection, "Few Good Things", "Saba", '2022');
+const myCollect5 = addToCollection(myCollection, 'Luv 4 Rent', 'Smino', '2022');
+const myCollect6 = addToCollection(myCollection, "Apollo XXI", "Steve Lacy", '2019');
+
+console.log(myCollection);
 
 
 // PLEASE DO NOT MODIFY THIS. Just leave it down here at the bottom. Think of it
