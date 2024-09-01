@@ -21,14 +21,20 @@ function addToCollection(collection, title, artist, yearPublished) {
 }
 
 const myCollect = addToCollection(myCollection, 'Bismillah', 'Peter Cat Recording Co.', '2019');
-const myCollect2 = addToCollection(myCollection, "Europe '72 (Live: 2001 Remaster)", "Grateful Dead", "2001");
+const myCollect2 = addToCollection(myCollection, "Europe '72 (Live: 2001 Remaster)", "The Grateful Dead", "2001");
 const myCollect3 = addToCollection(myCollection, 'This Old Dog', 'Mac DeMarco', '2017');
 const myCollect4 = addToCollection(myCollection, "Few Good Things", "Saba", '2022');
 const myCollect5 = addToCollection(myCollection, 'Luv 4 Rent', 'Smino', '2022');
 const myCollect6 = addToCollection(myCollection, "Apollo XXI", "Steve Lacy", '2019');
 
-console.log(myCollection);
+//console.log(myCollection);
 
+function showCollection(collection) {
+ for(const item of collection) {
+  console.log(`${item.title} by ${item.artist}, published in ${item.yearPublished}`)
+ } 
+}
+console.log(showCollection(myCollection));
 
 // PLEASE DO NOT MODIFY THIS. Just leave it down here at the bottom. Think of it
 // as a lil' chunk of friendly code that you don't need to understand right now.
